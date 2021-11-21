@@ -34,7 +34,7 @@ nav{
     color: white;
 }
 .main-section{
-    background-color: #3b3333;
+    background-color: #110e1c;
     width: calc(100% - 200px);
     height: 100%;
     overflow-y: scroll;
@@ -98,7 +98,7 @@ img{
     position:relative
 }
 .img-container:hover{
-    opacity: 0.5;
+    opacity: 0.7;
 }
 .img-container:hover .play{
     display:block
@@ -113,6 +113,7 @@ img{
 } 
 .fa-play-circle{
     font-size: 60px;
+    color: white;
 }
 .names{
     display: flex;
@@ -120,10 +121,7 @@ img{
     text-align: center;
 }
 .img-info{
-    margin-top: 10px;
-    width: 170px;
-    display: flex;
-    flex-direction: column;
+    width: 190px;
 }
 h1{
     margin-top: 10px;
@@ -159,10 +157,12 @@ h6{
 
 footer{
     height: 100px;
-    background-color: rgba(0, 0, 0, 0.9);
+    background-color: #171717;
     display: flex;
     justify-content: space-between;
     padding: 12px;
+    z-index: 100;
+    
 }
 .footer-left{
     width: 220px;
@@ -249,3 +249,26 @@ footer{
 .text-player h1:hover{
     color: gray;
 }
+
+
+/* aiuto */
+@media screen and (max-width: 780px){
+.nav-main{
+    width: 700px;
+    height: 50px;
+    padding: 5px;
+    display: flex;
+}
+.main-section{font-size: calc(100% - 3px); width: 100%;}
+
+.recent{width: 100%;}
+
+.main-section img{width:130px;}
+}
+/* bonus call-to-action */
+@media screen and (max-height: 300px) {
+    .upgrade {
+      display: none;
+    }
+   
+  }
